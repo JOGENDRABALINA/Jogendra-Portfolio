@@ -1,7 +1,6 @@
-@import "../global.scss";
+@use "../global.scss" as *;
 
-.portfoliolist
-{
+.portfoliolist {
     font-size: 14px;
     margin: 0px 23px;
     padding: 7px;
@@ -10,19 +9,16 @@
     cursor: pointer;
     overflow: hidden;
 
-    li
-    {
+    li {
         justify-content: center;
         align-items: center;
     }
 
-    @include mobile
-    {
+    @include mobile {
         margin: auto;
     }
 
-    &.active
-    {
+    &.active {
         background-color: #398485;
         color: white;
     }
