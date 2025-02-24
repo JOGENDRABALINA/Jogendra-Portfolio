@@ -15,14 +15,14 @@ const Tech = () => {
           Certifications
         </h2>
       </motion.div><br></br><br></br>
-    <div className='flex flex-row flex-wrap justify-center gap-4'>
-      {technologies.map((technology) => (
-        <div style={{height: '5rem', width: "5rem",}} key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-          
-        </div>
-      ))}
+      <div className='flex flex-row flex-wrap justify-center gap-4'>
+  {technologies.map((technology, index) => (
+    <div style={{ height: '5rem', width: "5rem" }} key={`${technology.name}-${index}`}>
+      <BallCanvas icon={technology.icon} />
     </div>
+  ))}
+</div>
+
     </>
   );
 };

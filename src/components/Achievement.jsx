@@ -20,8 +20,8 @@ const Achievement = () => {
       </div>
       <div className={`-mt-20 justify-center p-6 ${styles.paddingX} gap-7`}>
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {achievements.map((achievement) => (
-          <li className='text-white-100 text-[15px] pl-1' style={{fontSize:18,color:'black',fontWeight:"500"}}>{achievement.title}</li>
+        {achievements.map((achievement ,index) => (
+          <li key={achievement.id || index} className='text-white-100 text-[15px] pl-1' style={{fontSize:18,color:'black',fontWeight:"500"}} >{achievement.title}</li>
         ))}
         </ul>
       </div>
